@@ -172,3 +172,4 @@ var buddhaquote = myWindow.document.getElementById('buddhaquote4')
 			// alert(a+" "+b+" "+c+" "+d+" "+e)
 }
 
+window.onload=myFunction()
