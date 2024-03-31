@@ -54,11 +54,11 @@ myWindow = window.open("", "","width=600,height=600" );
 
 
 const q=document.getElementsByClassName('query ng-scope')[0].getElementsByTagName('div')[0].innerHTML
-//myWindow = window.open("", "myWindow", "width=500,height=500");   // Opens a new window
+
 myWindow.document.documentElement.remove(); 
 myWindow.document.write("<html><head><title>My Info</title></head><body>");
 myWindow.document.write("<p id='buddhaquote1'>"+q+"</p>");
-//alert(document.getElementById('draftLoad').rows[2].cells[15].innerHTML)
+
 createtooltip()
 var buddhaquote = myWindow.document.getElementById('buddhaquote1')
      buddhaquote.addEventListener('mouseup', function(e){
@@ -92,7 +92,7 @@ let e=document.getElementsByClassName('col-lg-3 col-md-3 col-sm-3')[7].getElemen
 let f=document.getElementsByClassName('small text-white ng-binding')[0].innerHTML;
 let g= document.getElementsByClassName('col-lg-4 col-md-4 col-sm-4')[52].getElementsByTagName('p')[0].innerHTML;
 let h=document.getElementsByClassName('col-lg-4 col-md-4 col-sm-4')[49].getElementsByTagName('p')[0].innerHTML;
-//alert(a + " "+h+"+b+ " "+c+" "+d+" "+e+" "+f+" "+g);
+
   let i= document.getElementsByClassName('col-lg-7 col-md-6 col-sm-6')[1].getElementsByTagName('p')[0].innerHTML;
  let j= document.getElementsByClassName('col-lg-7 col-md-6 col-sm-6')[3].getElementsByTagName('p')[0].innerHTML;
  
@@ -118,15 +118,12 @@ var buddhaquote = myWindow.document.getElementById('buddhaquote2')
 	function buildTable(a,b,c,d,e){
 	 
 try{
-//div.innerHTML = `<table border=><tr><td>${a}</td><td>${b}</td><td>${c}</td><td>${d}</td><td>${e}/td></tr></table>`;
-// set style
+
 str="${a}${b}${c}${d}${e}"
-//alert(a+'\t'+b+'\t'+c+'\t'+d+'\t'+e)
 
-//myWindow = window.open("", "myWindow", "width=500,height=500");   // Opens a new window
 
-//myWindow.document.write("<table border='5' id='buddhaquote3'><tr><td>"+a+'</td><td>'+b+'</td><td>'+c+'</td><td>'+d+'</td><td>'+e+"</td></tr><table>");
-myWindow.document.write("<table id='buddhaquote3'><tr><td style='border: 1px solid black; padding: 20px;'>"+a+"</td><td style='border: 1px solid black; padding: 20px;'>"+b+"</td><td style='border: 1px solid black; padding: 20px;'>"+c+"</td><td style='border: 1px solid black; padding: 20px;'>"+d+"</td><td style='border: 1px solid black; padding: 20px;'>"+e+"</td></tr><table>");
+myWindow.document.write("<table border='1' id='buddhaquote3'><tr><td>"+a+'</td><td>'+b+'</td><td>'+c+'</td><td>'+d+'</td><td>'+e+"</td></tr><table>");
+//myWindow.document.write("<table id='buddhaquote3'><tr><td style='border: 1px solid black; padding: 20px;'>"+a+"</td><td style='border: 1px solid black; padding: 20px;'>"+b+"</td><td style='border: 1px solid black; padding: 20px;'>"+c+"</td><td style='border: 1px solid black; padding: 20px;'>"+d+"</td><td style='border: 1px solid black; padding: 20px;'>"+e+"</td></tr><table>");
 	
 		createtooltip()
 var buddhaquote = myWindow.document.getElementById('buddhaquote3')
@@ -142,7 +139,7 @@ var buddhaquote = myWindow.document.getElementById('buddhaquote3')
 }catch(err){myWindow.document.write(err);}
 		
 	}
-//window.onload = function() { myFunction() };
+
 function DoctorDetails()
 {
   try{
@@ -152,7 +149,6 @@ function DoctorDetails()
     const c=document.getElementsByClassName('table-responsive m-b-10')[0].getElementsByClassName('table table-condensed')[0].getElementsByTagName('p')[2].innerHTML.trim()
     const d=document.getElementsByClassName('table-responsive m-b-10')[0].getElementsByClassName('table table-condensed')[0].getElementsByTagName('p')[3].innerHTML.trim()
     const e=document.getElementsByClassName('table-responsive m-b-10')[0].getElementsByClassName('table table-condensed')[0].getElementsByTagName('p')[4].innerHTML.trim()
-//myWindow = window.open("", "myWindow", "width=500,height=500");   // Opens a new window
 
 myWindow.document.write("<p id='buddhaquote4' style='color:red;font-size:20px'>"+"Department: "+a+'<br />'+
 "Treating Doctor: "+b+'<br />'+"Contact Number: "+c+'<br />'+
@@ -169,7 +165,7 @@ var buddhaquote = myWindow.document.getElementById('buddhaquote4')
 }, false)
 }catch(err){myWindow.document.write(err);}
 
-			// alert(a+" "+b+" "+c+" "+d+" "+e)
+			
 }
 
 window.onload=myFunction()
